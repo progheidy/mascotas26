@@ -1,0 +1,58 @@
+.success, .error {
+    color: rgb(111, 0, 255);
+    padding: 5px;
+    margin: 5px 0 15px 0;
+}
+
+.success {
+    background: green;
+}
+
+.error {
+    background: rgb(153, 0, 255);
+}
+body{
+    background-color: #7700a7;
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-colorido-modelo-huellas-pata-perro-o-gato_1017-30662.jpg?w=2000");
+}
+.img{
+    max-width: 8%; float: right;
+}
+.bg-dark {
+    background-color: #5d129b !important;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(0, 0, 0);
+    background-clip: border-box;
+    border: 1px solid rgb(247, 245, 245);
+    width: 400 px;
+  }
+  
+  .btn-primary {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border-color: #9009ff;
+}
+#product-list{
+    display: flex;
+flex-wrap: wrap;
+}
+#product-list div .card{
+    width: 100%;
+    color: white;
+}
+
+#product-list div{
+    width: 48%;
+    margin-left: 10px;
+}
+.card-body{
+    width: 100%;
+}

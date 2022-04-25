@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Mundo Mascotas</title>
+  <!-- Bootswatch Cosmo Theme -->
+  <link
+   rel="stylesheet"
+   href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="App.css" />
+ </head>
+
+ <body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-dark bg-dark">
+   <a class="navbar-brand" href="#" style="color: rgb(248, 241, 255)"
+    >PRODUCTOS PARA LAS MASCOTAS</a
+   >
+   <div>
+    <img
+     src="https://previews.123rf.com/images/tigatelu/tigatelu1701/tigatelu170100016/69363160-ilustraci%C3%B3n-de-conjunto-de-divertidos-perros-de-dibujos-animados.jpg"
+     alt="Logo"
+     class="img"
+    />
+   </div>
+  </nav>
+  <div class="container">
+   <!-- APPLICATION -->
+   <div id="App" class="row pt-5">
+    <!-- FORM -->
+    <div class="col-md-4">
+     <div class="card">
+      <form id="product-form" class="card-body">
+       <h5 style="color: rgb(119, 0, 255)">Nombre del producto</h5>
+       <div class="form-group">
+        <input
+         type="text"
+         id="name"
+         placeholder="Nombre del producto"
+         class="form-control"
+        />
+       </div>
+       <h5 style="color: rgb(119, 0, 255)">Precio del producto</h5>
+       <div class="form-group">
+        <input
+         type="number"
+         id="price"
+         step="0.01"
+         placeholder="Precio"
+         class="form-control"
+        />
+       </div>
+       <h5 style="color: rgb(119, 0, 255)">Ingresa el año</h5>
+       <div class="form-group">
+        <input
+         type="number"
+         id="year"
+         min="1900"
+         max="2099"
+         step="1"
+         value="2018"
+         class="form-control"
+        />
+       </div>
+       <h5 style="color: rgb(119, 0, 255)">Marcas Comida Perros</h5>
+       <div class="form-group">
+        <select
+         style="width: 100%"
+         class="form-group"
+         class="form-select"
+         id="categoria"
+         aria-label="Default select example"
+        >
+         <option selected>Dog Chow</option>
+         <option value="Hogar">Ringo</option>
+         <option value="Uso personal">NutreCan</option>
+         <option value="Otros">Dogourmet</option>
+        </select>
+       </div>
+
+       <input
+        type="submit"
+        ;
+        style="color: rgb(255, 255, 255)"
+        value="Guardar"
+        class="btn btn-primary btn-block"
+       />
+      </form>
+     </div>
+    </div>
+
+    <!-- PRODUCTS LIST -->
+    <div id="product-list" class="col-md-8"></div>
+   </div>
+  </div>
+
+  <script src="App.js" type="module"></script>
+  <script>
+   alert('Bienvenidos a PRODUCTOS DE MASCOTA creado por Heidy Jaimes')
+  </script>
+ </body>
+</html>
